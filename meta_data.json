@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "data (things)",
+        "1": "technical",
+        "2": "productivity"
+    },
+    "demo_page": "https://minimum-studio.bubbleapps.io/person-name",
+    "description": "This plugin makes it easy to work with people's names. Simply provide a first and last name and get a bunch of common name formats to pick from.\n\nTo receive special offers and important updates please visit: https://zeroqo.de/updates\n\nNEED HELP BUILDING A CUSTOM APPLICATION?\nhttps://dev.zeroqode.com\n\nSUPERCHARGE YOUR APP WITH ZEROQODE PLUGINS\nhttps://zeroqode.com/plugins\n\nQUESTIONS OR NEED HELP?\nhttps://forum.zeroqode.com",
+    "image": "//meta-q.cdn.bubble.io/f1706901999940x514703090385389300/Name%20Formatter.webp",
+    "license": "open_source",
+    "link": "https://zeroqode.com/plugins",
+    "name": "Name Formatter",
+    "plugin_instructions": "",
+    "sa_node_version": 18
+}

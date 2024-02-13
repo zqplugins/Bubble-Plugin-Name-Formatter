@@ -1,0 +1,84 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 20,
+        "width": 20
+    },
+    "display": "Name",
+    "fields": {
+        "AAD": {
+            "caption": "First Name",
+            "doc": "Person's first name.",
+            "editor": "DynamicValue",
+            "name": "first_name",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAE": {
+            "caption": "Last Name",
+            "doc": "Person's last name.",
+            "editor": "DynamicValue",
+            "name": "last_name",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "icon": "ion-man",
+    "states": {
+        "AAF": {
+            "caption": "Full",
+            "doc": "John Smith",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  return \"\";\n}"
+            },
+            "name": "full",
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "Familiar",
+            "doc": "John S.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  return \"\";\n}"
+            },
+            "name": "familiar",
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Abbreviated",
+            "doc": "J. Smith",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  return \"\";\n}"
+            },
+            "name": "abbreviated",
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Sorted",
+            "doc": "Smith, John",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  return \"\";\n}"
+            },
+            "name": "sorted",
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "Possessive",
+            "doc": "John Smith's",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  return \"\";\n}"
+            },
+            "name": "possessive",
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "Initials",
+            "doc": "JS",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n  return \"\";\n}"
+            },
+            "name": "initials",
+            "value": "text"
+        }
+    }
+}
