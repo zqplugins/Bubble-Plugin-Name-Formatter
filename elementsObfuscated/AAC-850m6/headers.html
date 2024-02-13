@@ -1,0 +1,73 @@
+<script>
+  var NameOfPerson = (function () {
+    function NameOfPerson(_a) {
+      var firstName = _a.firstName,
+        lastName = _a.lastName;
+      this.firstName = firstName;
+      this.lastName = lastName;
+    }
+
+    NameOfPerson.prototype.full = function () {
+      if (this.hasLast()) {
+        return this.firstName + " " + this.lastName;
+      }
+      return this.firstName;
+    };
+
+    NameOfPerson.prototype.familiar = function () {
+      var _a;
+      if (this.hasLast()) {
+        return (
+          this.firstName +
+          " " +
+          ((_a = this.lastName) === null || _a === void 0 ? void 0 : _a.charAt(0)) +
+          "."
+        );
+      }
+      return this.firstName;
+    };
+
+    NameOfPerson.prototype.abbreviated = function () {
+      if (this.hasLast()) {
+        return this.firstName.charAt(0) + ". " + this.lastName;
+      }
+      return this.firstName;
+    };
+
+    NameOfPerson.prototype.sorted = function () {
+      if (this.hasLast()) {
+        return this.lastName + ", " + this.firstName;
+      }
+      return this.firstName;
+    };
+
+    NameOfPerson.prototype.possessive = function () {
+      var fullName = this.full();
+      if (fullName.endsWith("s")) {
+        return fullName + "'";
+      }
+      return fullName + "'s";
+    };
+
+    NameOfPerson.prototype.initials = function () {
+      var _a;
+      if (this.hasLast()) {
+        return (
+          "" +
+          this.firstName.charAt(0).toUpperCase() +
+          ((_a = this.lastName) === null || _a === void 0 ? void 0 : _a.charAt(0).toUpperCase())
+        );
+      }
+      return this.firstName.charAt(0).toUpperCase();
+    };
+
+    NameOfPerson.prototype.hasLast = function () {
+      if (this.lastName == null) {
+        return false;
+      }
+      return true;
+    };
+
+    return NameOfPerson;
+  })();
+</script>
